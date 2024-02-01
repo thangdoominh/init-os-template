@@ -20,3 +20,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 # add permission for docker (https://docs.docker.com/engine/install/linux-postinstall/)
 sudo groupadd docker
 sudo usermod -aG docker $USER
+
+# Download the current stable release of Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+# Apply executable permissions to the binary
+sudo chmod +x /usr/local/bin/docker-compose
+
+# Create a symbolic link to make it accessible from any directory
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose

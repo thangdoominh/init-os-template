@@ -9,6 +9,12 @@ sudo sh ubuntu.sh
 ## Debian
 
 ### Docker 
+
+Download
+```
+curl -OL https://raw.githubusercontent.com/thangdoominh/init-os-template/dev/debian.sh
+```
+
 Install
 ```
 sudo sh debian.sh
